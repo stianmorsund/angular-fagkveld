@@ -1,0 +1,31 @@
+[{
+    "name": "Donald Duck",
+    "job": "Meierifabrikken",
+    "age": "59"
+  },
+  {
+    "name": "Petter Smart",
+    "job": "Smarte Oppfinnelser AS",
+    "age": "42"
+  },
+  {
+    "name": "Skrue McDuck",
+    "job": "Pengebingen Invest AS",
+    "age": "95"
+  },
+  {
+    "name": "Bestemor Duck",
+    "job": "Gårdseier",
+    "age": "80"
+  },
+  {
+    "name": "Guffen",
+    "job": "Gårdsgutt",
+    "age": "22"
+  },
+  {
+    "name": "Guldbrand Gråstein",
+    "job": "Gråstein Invest",
+    "age": "92"
+  }
+]
