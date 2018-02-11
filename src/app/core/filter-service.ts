@@ -6,9 +6,10 @@ export class FilterService {
     constructor() { }
 
     filter(query: string, citizens: Citizen[]): Citizen[] {
+        const lowerCasequery = query.toLowerCase();
         return citizens.filter(c =>
-            (c.name && c.name.toLowerCase().indexOf(query) > -1) ||
-            (c.job && c.job.toLowerCase().indexOf(query) > -1)
+            (c.name && c.name.toLowerCase().indexOf(lowerCasequery) > -1) ||
+            (c.job && c.job.toLowerCase().indexOf(lowerCasequery) > -1)
         );
     }
 }
