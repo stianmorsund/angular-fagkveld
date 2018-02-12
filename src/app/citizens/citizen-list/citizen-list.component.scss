@@ -1,4 +1,4 @@
-.search {
+.citizen-search {
   padding: 2em 0;
   &__input {
     width: 100%;
@@ -13,13 +13,12 @@
   }
 }
 
-.results {
+.citizen-list {
   display: flex;
   list-style-type: none;
   flex-direction: column;
-}
-
-.citizens__item {
-  display: flex;
-  flex-direction: column;
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -15,14 +15,6 @@ export class CitizenListComponent implements OnInit {
 
   public citizens: Citizen[];
   public filteredCitizens: Citizen[];
-  public  model: Citizen = {
-      name: '',
-      job: '',
-      age: null
-    }
-  public showForm = false;
-
-  @ViewChild('citizenForm') public citizenForm: NgForm;
 
   constructor(
     private citizenService: CitizensService,
@@ -37,15 +29,6 @@ export class CitizenListComponent implements OnInit {
 
   filterChanged(query: string): void {
     this.filteredCitizens = this.filterService.filter(query, this.citizens);
-  }
-
-  onSubmit(): void {
-    if (this.citizenForm.valid) {
-      const newcitizens = Object.assign({}, this.model);
-      this.citizens.push(newcitizens);
-      this.citizenForm.reset();
-      this.showForm = false;
-    }
   }
 
 }

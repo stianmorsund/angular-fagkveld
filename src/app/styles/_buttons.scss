@@ -1,0 +1,24 @@
+.btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  font-size: 1.2em;
+  transition: .2s ease all;
+  &--big {
+    font-size: 4em;
+  }
+  &--padding {
+    padding: .5em 3em;
+  }
+  &--blue {
+    border: 2px solid darkslateblue;
+    color: darkslateblue;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: darken(darkslateblue, 15%);
+    }
+  }
+}
