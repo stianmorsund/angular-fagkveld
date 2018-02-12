@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule }   from '@angular/forms';
 
 import { CitizensService } from './citizen-service/citizens.service';
 import { CitizenListComponent } from './citizen-list/citizen-list.component';
@@ -7,7 +8,8 @@ import { CitizenSingleComponent } from './citizen-single/citizen-single.componen
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   declarations: [CitizenListComponent, CitizenSingleComponent],
   exports: [CitizenListComponent],
