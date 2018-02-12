@@ -63,7 +63,7 @@ Andre ønsker?
 ---
 
 ## Hva skal vi lage
-- Andeby
+- Andeby 🦆
 - En klassisk frontend oppgave
 - Kommunisere med en REST-tjeneste, filtrere liste, events...
 
@@ -99,11 +99,11 @@ $ npm install -g @angular/cli
 
 ---
 
-## Andeby!
+## 🦆🦆🦆 Andeby 🐤🐤🐤
 
-Hent ned boilerplate
+Hent ned boilerplate-prosjekt
 ```(bash)
-$ git clone ...
+$ git clone https://github.com/stianmorsund/angular-fagkveld-base.git
 ```
 
 ---
