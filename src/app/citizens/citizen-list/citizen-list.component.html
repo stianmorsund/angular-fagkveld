@@ -1,3 +1,29 @@
+<button type="button" alt="Legg til ny and" (click)="showForm = !showForm"><span [hidden]="showForm">+</span><span [hidden]="!showForm">–</span></button>
+<div class="form" [hidden]="!showForm">
+  <form (ngSubmit)="onSubmit()" #citizenForm="ngForm">
+    <div class=form-group>
+      <label for="name">Name</label>
+      <input type="text" required
+        [(ngModel)]="model.name" name="name" #name="ngModel">
+      <div [hidden]="name.valid || name.pristine && citizenForm.pristine" class="alert alert-danger">
+        Husk et navn!
+      </div>
+    </div>
+
+    <div class=form-group>
+      <label for="age">Alder</label>
+      <input type="text" [(ngModel)]="model.age" name="age">
+    </div>
+
+    <div class=form-group>
+      <label for="age">Jobb</label>
+      <input type="text" [(ngModel)]="model.job" name="job">
+    </div>
+
+    <button type="submit">Lagre</button>
+  </form>
+</div>
+
 <div class="search">
   <input autofocus type="search" placeholder="Finn innbygger" class="search__input" id="search-input" (keyup)="filterChanged($event.target.value)">
 </div>
