@@ -19,22 +19,7 @@
   flex-direction: column;
 }
 
-.citizen {
+.citizens__list {
+  display: flex;
   flex-direction: column;
-  background: aliceblue;
-  transition: .2s ease all;
-  margin: .5em 0;
-  padding: 2em 1em;
-  &>* {
-    display: flex;
-  }
-  &__name {
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-  &:hover,
-  &:active {
-    background: darkslateblue;
-    color: #fff;
-  }
 }

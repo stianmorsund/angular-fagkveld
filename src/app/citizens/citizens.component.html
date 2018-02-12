@@ -1,12 +1,11 @@
 <div class="search">
   <input autofocus type="search" placeholder="Finn innbygger" class="search__input" (keyup)="filterChanged($event.target.value)">
-</div> 
+</div>
 
 <div class="results">
   <ul *ngIf="citizens">
-    <li *ngFor="let citizen of filteredCitizens" class="citizen">
-      <span class="citizen__name">{{ citizen.name }} ({{ citizen.age }})</span>
-      <span class="citizen__job">{{ citizen.job }}</span>
+    <li *ngFor="let citizen of filteredCitizens" class="citizens__list">
+      <andeby-duck [citizen]="citizen"></andeby-duck>
     </li>
   </ul>
 </div>

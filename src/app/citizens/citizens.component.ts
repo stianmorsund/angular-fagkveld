@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CitizensService } from './citizens.service';
-import { Citizen } from './citizen';
+import { Citizen } from './citizen.model';
 import { FilterService } from '../core/filter-service';
 
 @Component({
