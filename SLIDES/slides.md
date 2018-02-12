@@ -1,7 +1,8 @@
 # Slides
+
 ## Program
 1. Introduksjon til Angular
-2. Workshop - opprett enkelt prosjekt
+2. Workshop - opprett register over Andeby
 3. Diskusjon og eksperimentering med mer avanserte muligheter
 
 ## Hvorfor Angular
