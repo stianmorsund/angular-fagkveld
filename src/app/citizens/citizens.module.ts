@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CitizensComponent } from './citizens.component';
-import { CitizensService } from './citizens.service';
-import { DuckComponent } from './duck/duck.component';
+import { CitizensService } from './citizen-service/citizens.service';
+import { CitizenListComponent } from './citizen-list/citizen-list.component';
+import { CitizenSingleComponent } from './citizen-single/citizen-single.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [CitizensComponent, DuckComponent],
-  exports: [CitizensComponent],
+  declarations: [CitizenListComponent, CitizenSingleComponent],
+  exports: [CitizenListComponent],
   providers: [CitizensService]
 })
 export class CitizensModule { }

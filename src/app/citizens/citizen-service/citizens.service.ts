@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
-import { Citizen } from './citizen.model';
-import { environment as env } from '../../environments/environment';
+import { Citizen } from '../citizen.model';
+import { environment as env } from '../../../environments/environment';
 
 @Injectable()
 export class CitizensService {

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CitizensService } from './citizens.service';
-import { Citizen } from './citizen.model';
-import { FilterService } from '../core/filter-service';
+import { CitizensService } from '../citizen-service/citizens.service';
+import { Citizen } from '../citizen.model';
+import { FilterService } from '../../core/filter-service';
 
 @Component({
-  selector: 'andeby-citizens',
-  templateUrl: './citizens.component.html',
-  styleUrls: ['./citizens.component.scss']
+  selector: 'andeby-citizen-list',
+  templateUrl: './citizen-list.component.html',
+  styleUrls: ['./citizen-list.component.scss']
 })
-export class CitizensComponent implements OnInit {
+export class CitizenListComponent implements OnInit {
 
   public citizens: Citizen[];
   public filteredCitizens: Citizen[];

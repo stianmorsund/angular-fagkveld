@@ -5,7 +5,7 @@
 <div class="results">
   <ul *ngIf="citizens">
     <li *ngFor="let citizen of filteredCitizens" class="citizens__list">
-      <andeby-duck [citizen]="citizen"></andeby-duck>
+      <andeby-citizen-single [citizen]="citizen"></andeby-citizen-single>
     </li>
   </ul>
 </div>
