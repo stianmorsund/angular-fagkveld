@@ -1,10 +1,10 @@
 <div class="search">
-  <input autofocus type="search" placeholder="Finn innbygger" class="search__input" (keyup)="filterChanged($event.target.value)">
+  <input autofocus type="search" placeholder="Finn innbygger" class="search__input" id="search-input" (keyup)="filterChanged($event.target.value)">
 </div>
 
 <div class="results">
   <ul *ngIf="citizens">
-    <li *ngFor="let citizen of filteredCitizens" class="citizens__list">
+    <li *ngFor="let citizen of filteredCitizens" class="citizens__item">
       <andeby-citizen-single [citizen]="citizen"></andeby-citizen-single>
     </li>
   </ul>
