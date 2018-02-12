@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CitizensModule } from './citizens/citizens.module';
-import { CoreModule } from './core/core.module';
+import { CoreModule } from './core/core.module';;
 
 
 @NgModule({

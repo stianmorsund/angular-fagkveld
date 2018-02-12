@@ -1,20 +1,26 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CitizensComponent } from './citizens.component';
+import { CitizenListComponent } from './citizen-list.component';
+import { CitizenSingleComponent } from '../citizen-single/citizen-single.component';
+import { CitizensModule } from '../citizens.module';
+import { CoreModule } from '../../core/core.module';
 
 describe('CitizensComponent', () => {
-  let component: CitizensComponent;
-  let fixture: ComponentFixture<CitizensComponent>;
+  let component: CitizenListComponent;
+  let fixture: ComponentFixture<CitizenListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CitizensComponent ]
+      imports: [
+        CoreModule,
+        CitizensModule],
+      declarations: []
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CitizensComponent);
+    fixture = TestBed.createComponent(CitizenListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
