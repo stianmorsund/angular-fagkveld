@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { CitizensService } from '../citizen-service/citizens.service';
 import { Citizen } from '../citizen.model';
-import { FilterService } from '../../core/filter-service';
+import { FilterService } from '../../core/filter-service/filter-service';
 
 @Component({
   selector: 'andeby-citizen-list',
