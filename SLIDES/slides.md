@@ -1,12 +1,13 @@
 ## Velkommen til Angular Fagkveld!
 <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" style="background: none; border: none; box-shadow: none;">
 
+##### Stian Morsund og Øystein Lygre
 ---
 
 ## Program
 1. Introduksjon til Angular
 2. Workshop - lage en enkel app
-3. Diskusjon og eksperimentering med mer avanserte muligheter?
+3. Diskusjon
 
 Andre ønsker?
 
@@ -29,37 +30,59 @@ Andre ønsker?
 ---
 
 ## Hvorfor Angular?
-- Typescript
-- Leverer alt som trengs for en komplett SPA (webpack-oppsett, testoppsett, byggeverktøy +++)
-- Solid backing (Google)
+
+----
+
+### Komplett rammeverk for SPA
+- Skjema
+- Ruting
+- Animasjoner
+- Tilgjengelighet
+- Webpack-oppsett
+- Testoppsett
+- Byggeverktøy
+
+----
+
+- Solid støtte (Google)
+- Aktiv utvikling
 
 ----
 
 ## Typescript
 - Supersett av Javascript
 - Kompileres til vanilla JavaScript
-- Statisk typet (typesjekking skjer ved kompilering). Dette gjør at flere trivielle bugs ofte blir fanget opp før programmet startes
-- Familiært for de med bakgrunn i Java, C# etc
+- Statisk typet (typesjekking skjer ved kompilering ) = færre bugs, lettere refaktorering
+- Familiært for de med bakgrunn i C#, Java, etc.
 
 ----
 
 ## Ytelse
-- SSR
-- Mobil er høyt prioritert ifht minnehåndtering, touchbaserte controllere, ytelse...
-- Øysteins grafer
+- SSR, Angular Universal,  App shell
+- Mobil er høyt prioritert, minnehåndtering, touchbaserte kontrollere, ytelse, +++
 
 ----
 
-## Angular CLI
-- Håndterer alt fra generering av komponenter, servicer, pipes og moduler til produksjonsbygging på en enkel måte
+![](http://www.stefankrause.net/wp/wp-content/uploads/2017/11/Bildschirmfoto-2017-11-20-um-20.48.23.png)
+<small>http://www.stefankrause.net</small>
+---
 
+## Angular CLI
+- Håndterer generering av
+  - Komponenter
+  - Servicer
+  - Pipes
+  - Moduler
+- Forenkler
+  - Utvikling
+  - Bygging til produksjon
 ----
 
 ## Arkitektur
-- Fokus på strukturert kode (moduler, komponenter, servicer)
-- Enkelt å komme i gang, velkjente prinsipper
+- Strukturert kode (moduler, komponenter, servicer)
+- Enkelt å komme i gang; velkjente prinsipper
 - Enkelt å vedlikeholde
-
+- Enkelt å teste
 ---
 
 ## Hva skal vi lage
@@ -71,9 +94,9 @@ http://localhost:4200
 ---
 
 ## Check ya tools
-- Node > 6.9.0            
+- Node > 6.9.0
 ```
-$ node --version 
+$ node --version
 ```
 - Nvm (valgfritt)
 - Git
@@ -99,7 +122,7 @@ $ npm install -g @angular/cli
 ---
 
 ## Arkitekturen til en Angular app
-<img src="https://angular.io/generated/images/guide/architecture/overview2.png">
+![](https://angular.io/generated/images/guide/architecture/overview2.png)
 <small>https://angular.io/generated/images/guide/architecture/overview2.png</small>
 
 ---
@@ -120,17 +143,19 @@ $ git clone https://github.com/stianmorsund/angular-fagkveld-base.git
 
 ## Nye features i Angular
 - Form builder
-- [Change detection](https://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html)
-- Zone
+- Zones
+- Change detection strategies
 - Routing
-- Observables\Rxjs
+- RxJs\Observables
 
+----
+<img style="background: #0c4eb2; padding: 0 1em; max-width:80%;" src="https://blog.thoughtram.io/images/cd-4.svg">
 ---
 
-## Where to go from here?
-- [Reactive forms](https://angular.io/guide/reactive-forms)
-- Changedetection strategies?
-- Optimalisering, AOT, three shaking, Universal & App shell,
+## Veien videre
+- Storybook - Stilguide for Angular
+- Reactive forms
+- Optimalisering, AOT, tree shaking
+- Anular Universal & App shell
 - Angular material - Material design komponentbibliotek
-- ngrx/store - State management for Angular, inspirert av Redux
-- Playbook - Alternativ til PatternLab med støtte for Angular
+- ngrx/store - State management inspirert av redux
