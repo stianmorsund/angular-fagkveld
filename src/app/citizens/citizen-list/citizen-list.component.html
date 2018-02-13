@@ -1,12 +1,13 @@
 <div class="citizen-search">
-  <input 
-  autofocus 
-  autocomplete="off" 
-  type="search" 
-  placeholder="🔍  Finn innbygger" 
-  class="citizen-search__input" 
+  <input
+  autofocus
+  autocomplete="off"
+  type="search"
+  placeholder="🔍  Finn innbygger"
+  class="citizen-search__input"
   id="search-input"
   (keyup)="filterChanged($event.target.value)"
+  (search)="filterChanged($event.target.value)"
   >
 </div>
 
