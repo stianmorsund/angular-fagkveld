@@ -21,7 +21,8 @@ export class CitizenListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.citizenService.getCitizens().subscribe((citizens: Citizen[]) => {
+    this.citizenService.init();
+    this.citizenService.currentCitizens().subscribe((citizens: Citizen[]) => {
       this.citizens = this.filteredCitizens = citizens;
     });
   }
