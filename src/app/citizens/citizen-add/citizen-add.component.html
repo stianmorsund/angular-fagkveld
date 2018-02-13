@@ -6,18 +6,19 @@
     <h2>Legg til innbygger</h2>
     <form (ngSubmit)="onSubmit()" #citizenForm="ngForm">
       <div class="form-group">
-        <input placeholder="Navn" type="text" required [(ngModel)]="model.name" name="name" #name="ngModel">
+        <input autocomplete="off" placeholder="Navn" type="text" required [(ngModel)]="model.name" name="name" #name="ngModel">
         <div [hidden]="name.valid || name.pristine && citizenForm.pristine" class="alert alert-danger">
           Husk et navn!
         </div>
+
       </div>
 
       <div class="form-group">
-        <input placeholder="Alder" type="text" [(ngModel)]="model.age" name="age">
+        <input autocomplete="off" placeholder="Alder" type="text" [(ngModel)]="model.age" name="age">
       </div>
 
       <div class="form-group">
-        <input placeholder="Jobb" type="text" [(ngModel)]="model.job" name="job">
+        <input autocomplete="off" placeholder="Jobb" type="text" [(ngModel)]="model.job" name="job">
       </div>
 
       <button class="btn btn--blue btn--padding" type="submit">Kvakk</button>
