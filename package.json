@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"npm run json-server\" \"ng serve\"",
-    "json-server": "json-server --watch src/assets/citizens.json",
+    "json-server": "json-server --watch dummy-data/citizens.json",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
