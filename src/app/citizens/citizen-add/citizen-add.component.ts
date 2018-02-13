@@ -53,7 +53,7 @@ export class CitizenAddComponent implements OnInit {
                 job: this.model.job,
                 age: this.model.age
             };
-            this.citizenService.addCitizen(newCitizen).subscribe();
+            this.citizenService.addCitizen(newCitizen);
             this.citizenForm.reset();
             this.toggleForm();
         }
