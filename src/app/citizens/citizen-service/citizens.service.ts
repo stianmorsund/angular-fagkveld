@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/finally';
 
 import { Citizen } from '../citizen.model';
 import { environment as env } from '../../../environments/environment';
@@ -31,11 +32,9 @@ export class CitizensService {
     });
   }
 
-  public addCitizen(c: Citizen): void {
-    this.http.post(env.apiUrl, c, this.configureOptions()).subscribe(() => {
-      // On success, reload update list of citizen from server
-      this.init();
-    });
+  public addCitizen(c: Citizen) {
+    return this.http.post(env.apiUrl, c, this.configureOptions())
+      .finally(() => this.init()); // After request is done, reload update list of citizen from server
   }
 
 }
