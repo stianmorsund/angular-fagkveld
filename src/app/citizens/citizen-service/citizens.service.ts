@@ -8,7 +8,7 @@ import { environment as env } from '../../../environments/environment';
 
 @Injectable()
 export class CitizensService {
-  private _currentCitizens = new Subject<Citizen[]>();;
+  private _currentCitizens = new Subject<Citizen[]>();
 
   constructor(
     private http: HttpClient
