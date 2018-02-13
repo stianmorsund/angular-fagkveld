@@ -13,7 +13,9 @@ export class CitizensService {
 
   constructor(
     private http: HttpClient
-  ) { }
+  ) {
+    this.getCitizens();
+  }
 
   private configureOptions() {
     return {
@@ -26,7 +28,7 @@ export class CitizensService {
     return this._currentCitizens.asObservable();
   }
 
-  public init(): void {
+  public getCitizens(): void {
     this.http.get<Citizen[]>(env.apiUrl).subscribe((citizens: Citizen[]) => {
       this._currentCitizens.next(citizens);
     });
@@ -34,7 +36,7 @@ export class CitizensService {
 
   public addCitizen(c: Citizen) {
     return this.http.post(env.apiUrl, c, this.configureOptions())
-      .finally(() => this.init()); // After request is done, reload update list of citizen from server
+      .finally(() => this.getCitizens()); // After request is done, reload update list of citizen from server
   }
 
 }
