@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 
 import { CitizensService } from '../citizen-service/citizens.service';
 import { Citizen } from '../citizen.model';
