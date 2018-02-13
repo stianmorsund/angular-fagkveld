@@ -38,7 +38,7 @@ Andre ønsker?
 ## Typescript
 - Supersett av Javascript
 - Kompileres til vanilla JavaScript
-- Statisk typet (typesjekking ved kompilering istendefor ved runtime). Dette gjør at flere trivielle bugs ofte blir fanget opp før runtime
+- Statisk typet (typesjekking skjer ved kompilering). Dette gjør at flere trivielle bugs ofte blir fanget opp før programmet startes
 - Familiært for de med bakgrunn i Java, C# etc
 
 ----
@@ -71,7 +71,10 @@ http://localhost:4200
 ---
 
 ## Check ya tools
-- Node > 6.9.0
+- Node > 6.9.0            
+```
+$ node --version 
+```
 - Nvm (valgfritt)
 - Git
 
@@ -92,6 +95,12 @@ https://yarnpkg.com/lang/en/docs/install/
 ```(bash)
 $ npm install -g @angular/cli
 ```
+
+---
+
+## Arkitekturen til en Angular app
+<img src="https://angular.io/generated/images/guide/architecture/overview2.png">
+<small>https://angular.io/generated/images/guide/architecture/overview2.png</small>
 
 ---
 
