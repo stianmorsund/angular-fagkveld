@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiUrl: '/assets/citizens.json'
+  apiUrl: 'http://localhost:3000/citizens'
 };

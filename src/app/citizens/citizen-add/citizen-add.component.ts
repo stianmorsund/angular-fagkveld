@@ -34,10 +34,13 @@ export class CitizenAddComponent implements OnInit {
         job: '',
         age: null
     };
-
     public state = 'hide';
 
     @ViewChild('citizenForm') public citizenForm: NgForm;
+
+    constructor(
+        private citizenService: CitizensService
+    ) { }
 
     ngOnInit() {
 
@@ -45,14 +48,18 @@ export class CitizenAddComponent implements OnInit {
 
     onSubmit(): void {
         if (this.citizenForm.valid) {
-            const newcitizens = Object.assign({}, this.model);
-            // this.citizens.push(newcitizens);
+            const newCitizen: Citizen = {
+                name: this.model.name,
+                job: this.model.job,
+                age: this.model.age
+            };
+            this.citizenService.addCitizen(newCitizen).subscribe();
             this.citizenForm.reset();
             this.toggleForm();
         }
     }
 
-    toggleForm($event?: any) {
+    toggleForm($event?: any): void {
         this.state = (this.state === 'show') ? 'hide' : 'show';
     }
 }

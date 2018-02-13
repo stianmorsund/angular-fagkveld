@@ -1,31 +1,46 @@
-[{
-    "name": "Donald Duck",
-    "job": "Meierifabrikken",
-    "age": "59"
-  },
-  {
-    "name": "Petter Smart",
-    "job": "Smarte Oppfinnelser AS",
-    "age": "42"
-  },
-  {
-    "name": "Skrue McDuck",
-    "job": "Pengebingen Invest AS",
-    "age": "95"
-  },
-  {
-    "name": "Bestemor Duck",
-    "job": "Gårdseier",
-    "age": "80"
-  },
-  {
-    "name": "Guffen",
-    "job": "Gårdsgutt",
-    "age": "22"
-  },
-  {
-    "name": "Guldbrand Gråstein",
-    "job": "Gråstein Invest",
-    "age": "92"
-  }
-]
+{
+  "citizens": [
+    {
+      "id": 1,
+      "name": "Donald Duck",
+      "job": "Meierifabrikken",
+      "age": "59"
+    },
+    {
+      "id": 2,
+      "name": "Petter Smart",
+      "job": "Smarte Oppfinnelser AS",
+      "age": "42"
+    },
+    {
+      "id": 3,
+      "name": "Skrue McDuck",
+      "job": "Pengebingen Invest AS",
+      "age": "95"
+    },
+    {
+      "id": 4,
+      "name": "Bestemor Duck",
+      "job": "Gårdseier",
+      "age": "80"
+    },
+    {
+      "id": 5,
+      "name": "Guffen",
+      "job": "Gårdsgutt",
+      "age": "22"
+    },
+    {
+      "id": 6,
+      "name": "Guldbrand Gråstein",
+      "job": "Gråstein Invest",
+      "age": "92"
+    },
+    {
+      "name": "En and",
+      "job": "Ingen jobb",
+      "age": "21",
+      "id": 7
+    }
+  ]
+}
